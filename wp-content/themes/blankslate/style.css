@@ -34,8 +34,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
-    background-color: turquoise;
+    padding: 10px;
+    background-color: #222222;
     box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
     margin-bottom: 1em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -61,7 +61,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 #menu a {
-    color: #000000;
+    color: white;
     text-decoration: none;
     font-weight: 500;
     padding: 10px 15px;
@@ -89,7 +89,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 #site-title a {
     font-size: large;
-    color: #000000;
+    color: white;
     white-space: nowrap;
     text-decoration: none;
 }
@@ -104,27 +104,26 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 #search .search-field {
     border-radius: 20px 0px 0px 20px;
-    border: 2px inset greenyellow;
+    border: 2px inset white;
     font-size: 14px;
     padding: 8px 12px;
 }
 
 #search .search-field:focus {
     outline: none;
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.6);
 }
 
 #search .search-submit {
-    background: turquoise;
-    color: black;
+    background: #222222;
+    color: white;
     border-radius: 0 20px 20px 0;
-    padding: 8.5px 12.5px;
+    padding: 9.1px 12.5px;
     cursor: pointer;
     transition: background 0.3s ease;
 }
 
 #search .search-submit:hover {
-    background: greenyellow;
+    background: black;
     /* darker on hover */
 }
 
@@ -133,17 +132,21 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    background-color: turquoise;
+    background-color: #222222;
     box-shadow: 0 -2px 5px rgba(0,0,0,.2);
     margin-top: auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#footer .copyright {
+    color: white;
 }
 
 html, body {
     height: 100%;
     margin: 0;
     background-color: white;
-    color: #333
+    color: #333;
 }
 
 #wrapper {
