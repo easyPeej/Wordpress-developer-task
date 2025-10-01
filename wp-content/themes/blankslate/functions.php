@@ -2,6 +2,7 @@
 use Carbon_Fields\Carbon_Fields;
 
 add_action('after_setup_theme', 'blankslate_setup');
+
 function blankslate_setup()
 {
     load_theme_textdomain('blankslate', get_template_directory() . '/languages');
@@ -184,3 +185,10 @@ function blankslate_comment_count($count)
         return $count;
     }
 }
+
+add_action('after_setup_theme', function () {
+    require_once ABSPATH . 'vendor/autoload.php';
+    #require_once get_template_directory() . '/vendor/autoload.php';
+    Carbon_Fields::boot();
+    require_once get_template_directory() . '/inc/fields.php';
+});
