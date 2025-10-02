@@ -1,0 +1,38 @@
+.custom-block {
+    padding: 0.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 2px solid #222222;
+    border-radius: 8px;
+}
+
+.custom-block__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.custom-block__inner > * {
+    flex: 1;
+    min-width: 0;
+}
+
+@media (min-width: 768px) {
+    .custom-block__inner{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+.custom-block__image img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+
+.custom-block__text {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    color: #222222;
+}

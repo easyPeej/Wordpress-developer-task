@@ -188,7 +188,6 @@ function blankslate_comment_count($count)
 
 add_action('after_setup_theme', function () {
     require_once ABSPATH . 'vendor/autoload.php';
-    #require_once get_template_directory() . '/vendor/autoload.php';
     Carbon_Fields::boot();
     require_once get_template_directory() . '/inc/fields.php';
 });
@@ -199,3 +198,15 @@ function blankslate_assets()
     wp_enqueue_script('blankslate-js', get_template_directory_uri() . '/dist/app.js', array(), null, true);
 }
 add_action('wp_enqueue_scripts', 'blankslate_assets');
+
+function blankslate_block_styles() {
+    wp_enqueue_style(
+        'blankslate_block_custom',
+        get_template_directory_uri() . '/block-custom.css', 
+        array(),
+        filemtime( get_template_directory() . '/block-custom.css' )
+    );
+}
+add_action( 'wp_enqueue_scripts', 'blankslate_block_styles');
+
+
