@@ -1,0 +1,17 @@
+{
+  "name": "blankslate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.93.2",
+    "vite": "^6.3.6"
+  }
+}

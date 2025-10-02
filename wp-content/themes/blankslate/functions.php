@@ -192,3 +192,10 @@ add_action('after_setup_theme', function () {
     Carbon_Fields::boot();
     require_once get_template_directory() . '/inc/fields.php';
 });
+
+function blankslate_assets()
+{
+    wp_enqueue_style('blankslate-style', get_template_directory_uri() . '/dist/style.css');
+    wp_enqueue_script('blankslate-js', get_template_directory_uri() . '/dist/app.js', array(), null, true);
+}
+add_action('wp_enqueue_scripts', 'blankslate_assets');
