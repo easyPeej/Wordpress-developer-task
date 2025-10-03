@@ -5,6 +5,7 @@ It includes:
 - A custom plugin for Case Studies
 
 Installation
+
 I used LocalWP to create this project so its probably best to start there, install LocalWP on your machine, then boot up a new site by clicking 'Add New Site' in the bottom corner. 
 Once you have a new site loaded up, download the zip file from the repo, and copy over to your new project files:
 - Unpack the zip file, go into the wp-content folder
@@ -19,6 +20,7 @@ Once you have a new site loaded up, download the zip file from the repo, and cop
 - In terminal make sure to be in \public\wp-content\themes\blankslate then run 'npm install' then 'npm run build'
 
 Setup
+
 Once those steps are done, you can open your wp admin panel via LocalWP. Couple of steps to ensure everythings works nicely:
 - Go into Appearance, themes then select the blankslate theme to activate
 - Go to plugins, click activate under Case Studies plugin.
