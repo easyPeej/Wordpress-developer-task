@@ -209,4 +209,10 @@ function blankslate_block_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'blankslate_block_styles');
 
+add_action('wp_enqueue_scripts', function() {
+    $ver = wp_get_theme()->get('Version');
+    wp_enqueue_style('theme-style', get_stylesheet_directory_uri() . '/dist/style.css', [], $ver);
+    wp_enqueue_style('theme-app', get_stylesheet_directory_uri() . '/dist/app.js', [], $ver, true);
+});
+
 
