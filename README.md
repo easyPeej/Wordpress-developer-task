@@ -6,7 +6,7 @@ It includes:
 
 Installation
 
-I used LocalWP to create this project so its probably best to start there, install LocalWP on your machine, then boot up a new site by clicking 'Add New Site' in the bottom corner. 
+I used LocalWP (https://localwp.com/) to create this project so its probably best to start there, install LocalWP on your machine, then boot up a new site by clicking 'Add New Site' in the bottom corner. 
 Once you have a new site loaded up, download the zip file from the repo, and copy over to your new project files:
 - Unpack the zip file, go into the wp-content folder
 - copy Blankslate (in themes folder) into /wp-content/themes/ 
