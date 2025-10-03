@@ -28,11 +28,9 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 /* === Reset Styles === */
 
-
-
 #header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding: 10px;
     background-color: #222222;
@@ -127,6 +125,31 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     /* darker on hover */
 }
 
+@media (max-width: 768px) {
+ #menu {
+    flex-direction: column;
+    align-items: flex-start;
+ }
+ #menu ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+ }
+ #search {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+ }
+ #search .search-field {
+    border-radius: 20px 20px 20px 20px;
+    width: 80%;
+ }
+ #search .search-submit {
+    border-radius: 20px 20px 20px 20px;
+    width: 80%;
+ }
+}
+
 #footer {
     display: flex;
     justify-content: space-between;
@@ -159,3 +182,10 @@ html, body {
     flex: 1;
 }
 
+body .case-study-single {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 6px;
+    background: #fff;
+    text-align: center;
+}
