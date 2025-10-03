@@ -1,6 +1,9 @@
-# Ignore everything in the root except the "wp-content" directory.
+# ignore everything in the root except the "wp-content" directory.
 /*
+
+# except these
 !.gitignore
 !wp-content/
 !composer.json
 !composer.lock
+

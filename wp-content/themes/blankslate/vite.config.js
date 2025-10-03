@@ -1,15 +1,14 @@
 import { defineConfig } from 'vite';
+import { resolve } from 'path';
 
 export default defineConfig({
-    root: 'src',
     build: {
-        outDir: '../dist',
+        outDir: 'dist',
         emptyOutDir: true,
         rollupOptions: {
             input: {
-                style: './scss/style.scss',
-                app: './js/app.js'
-            }
-        }
-    }
+                app: resolve(__dirname, 'src/app.js'),
+            },
+        },
+    },
 });
